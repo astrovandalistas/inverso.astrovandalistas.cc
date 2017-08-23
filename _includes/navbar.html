@@ -1,0 +1,42 @@
+<div id="navbar-mobile" class="nav-container">
+  <span id="show-menu" class="menu-icon" onclick="showMenu()">
+    <i class="fa fa-bars" aria-hidden="true"></i>
+  </span>
+</div>
+
+<a href="{{site.baseurl}}/">
+  <div class="header-image" style="background-image: url('{{site.baseurl}}/assets/covers/cover.jpg');"></div>
+</a>
+
+<div id="navbar">
+  <div id="hide-menu" class="menu-icon" onclick="hideMenu()">✖</div>
+  <div class="menu-pages">
+    {% assign cats = site.categories | size %}
+    {% if cats > 1 %}
+      {% for category in site.categories %}
+        <a class="menu-item" href="/{{ category|first }}/">{{ category|first }}</a>
+      {% endfor %}
+    {% endif %}
+  </div>
+  <hr class="menu-hr">
+  <div class="menu-social">
+    {% for social in site.social %}
+      {% unless social[1] == "" %}
+        <a class="menu-item" href="{{ social[1] }}" target="_blank">
+          <i class="fa fa-{{ social[0] }}" aria-hidden="true"></i>
+        </a>
+      {% endunless %}
+    {% endfor %}
+  </div>
+</div>
+
+<script>
+  function showMenu() {
+    document.getElementById('navbar').style.left = '0';
+    document.getElementById('hide-menu').style.display = 'block';
+  }
+
+  function hideMenu() {
+    document.getElementById('navbar').style.left = -document.getElementById('navbar').offsetWidth+'px';
+  }
+</script>

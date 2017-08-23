@@ -1,0 +1,36 @@
+# Site
+title: Imaginario Inverso
+subtitle: Laser Chat Fronterizo
+
+# URL
+url: http://inverso.astrovandalistas.cc
+baseurl: ''
+permalink: post/:title/
+include: ['_pages']
+
+# Build settings
+markdown: kramdown
+port: 4444
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Data
+social:
+  tumblr: ""
+  pinterest: ""
+  github: "https://github.com/astrovandalistas"
+  instagram: ""
+  twitter: "https://twitter.com/astrovandalista"
+  facebook: "https://www.facebook.com/Astrovandalistas-115153808562518/"
+  youtube: ""
+  vimeo: "https://vimeo.com/astrovandalistas"
+  soundcloud: ""
+  envelope: "mailto:somos@astrovandalistas.cc"
+twitter_user: "@astrovandalista"
