@@ -35,12 +35,6 @@ body {
     border-radius: 150px;
     margin: 0 auto $PAGE-LATERAL-SPACE;
   }
-
-  transition: box-shadow $TRANSITION-PERIOD linear;
-  box-shadow: none;
-  &:hover {
-    box-shadow: 10px 10px 10px #888;
-  }
 }
 
 #navbar {
