@@ -45,7 +45,7 @@ body {
   width: 100%;
   transition: left 0.5s linear;
   padding: 30px 0;
-  background-color: $BACKGROUND;
+  background-color: $TEXT-BACKGROUND;
 
   @include media-query(DESKTOP) {
     display: flex;
@@ -54,7 +54,7 @@ body {
     position: relative;
     width: 100%;
     left: 0;
-    padding: 0;
+    padding: 10px;
     margin-bottom: $PAGE-LATERAL-SPACE;
     transition: none;
   }
@@ -110,7 +110,7 @@ body {
 
   .menu-hr {
     color: #eee;
-    background-color: #eee;
+    background-color: #222;
     display: block;
     width: 50%;
     height: 2px;
