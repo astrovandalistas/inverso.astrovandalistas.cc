@@ -167,10 +167,6 @@ body {
   }
 }
 
-#footer {
-
-}
-
 #footer-hr {
   margin: $LIST-VERTICAL-SPACING 0;
   width: 100%;
@@ -194,6 +190,15 @@ body {
 
   .post-date {
     margin: 32px 0;
+  }
+
+  .quotes {
+    width: 90%;
+    margin: 0 auto;
+    @include media-query(DESKTOP) {
+      width: 80%;
+      margin: 0 auto;
+    }
   }
 
   audio {
