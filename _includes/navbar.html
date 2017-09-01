@@ -8,7 +8,7 @@
   <div class="header-image" style="background-image: url('{{site.baseurl}}/assets/covers/cover.png');"></div>
 </a>
 
-<div id="navbar">
+<div id="navbar" class="navbar-hide">
   <div id="hide-menu" class="menu-icon" onclick="hideMenu()">✖</div>
   <div class="menu-pages">
     {% assign cats = site.categories | size %}
@@ -34,11 +34,12 @@
 
 <script>
   function showMenu() {
-    document.getElementById('navbar').style.left = '0';
-    document.getElementById('hide-menu').style.display = 'block';
+    document.getElementById('navbar').classList.remove("navbar-hide");
+    document.getElementById('navbar').classList.add("navbar-show");
   }
 
   function hideMenu() {
-    document.getElementById('navbar').style.left = -document.getElementById('navbar').offsetWidth+'px';
+    document.getElementById('navbar').classList.remove("navbar-show");
+    document.getElementById('navbar').classList.add("navbar-hide");
   }
 </script>
