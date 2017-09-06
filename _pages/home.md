@@ -1,6 +1,6 @@
 ---
 layout: list
-title: Laser Chat Fronterizo
+title: Imaginario Inverso
 permalink: /
 category: all
 ---
