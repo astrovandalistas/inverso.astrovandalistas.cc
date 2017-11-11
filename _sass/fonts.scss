@@ -104,8 +104,14 @@ a {
 }
 
 #footer {
-  color: $MENU;
+  color: $TEXT-BACKGROUND;
   text-align: justify;
+  a {
+    color: $TEXT-BACKGROUND;
+  }
+  a:hover {
+    color: $LINK-COLOR-HOVER;
+  }
 }
 
 #post {
