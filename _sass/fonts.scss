@@ -84,7 +84,7 @@ a {
       color: $MENU-HOVER;
     }
 
-    .fa {
+    .fa, .fo-asterisk {
       @include media-query(DESKTOP) {
         font-size: $menu-title-size
       }

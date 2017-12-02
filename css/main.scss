@@ -110,6 +110,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: baseline;
 
     @include media-query(DESKTOP) {
       justify-content: flex-end;
